@@ -1,0 +1,1546 @@
+[
+ {
+   "Kunta": "Akaa",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Alajärvi",
+   "Vero": 21.75
+ },
+ {
+   "Kunta": "Alavieska",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Alavus",
+   "Vero": 21.25
+ },
+ {
+   "Kunta": "Asikkala",
+   "Vero": 20.75
+ },
+ {
+   "Kunta": "Askola",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Aura",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Brändö",
+   "Vero": 17.75
+ },
+ {
+   "Kunta": "Eckerö",
+   "Vero": 19
+ },
+ {
+   "Kunta": "Enonkoski",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Enontekiö",
+   "Vero": 21.25
+ },
+ {
+   "Kunta": "Espoo",
+   "Vero": 18
+ },
+ {
+   "Kunta": "Eura",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Eurajoki",
+   "Vero": 18
+ },
+ {
+   "Kunta": "Evijärvi",
+   "Vero": 22.5
+ },
+ {
+   "Kunta": "Finström",
+   "Vero": 19.5
+ },
+ {
+   "Kunta": "Forssa",
+   "Vero": 20.5
+ },
+ {
+   "Kunta": "Föglö",
+   "Vero": 17.5
+ },
+ {
+   "Kunta": "Geta",
+   "Vero": 18.5
+ },
+ {
+   "Kunta": "Haapajärvi",
+   "Vero": 22.5
+ },
+ {
+   "Kunta": "Haapavesi",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Hailuoto",
+   "Vero": 20.5
+ },
+ {
+   "Kunta": "Halsua",
+   "Vero": 23.5
+ },
+ {
+   "Kunta": "Hamina",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Hammarland",
+   "Vero": 18
+ },
+ {
+   "Kunta": "Hankasalmi",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Hanko",
+   "Vero": 21.75
+ },
+ {
+   "Kunta": "Harjavalta",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Hartola",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Hattula",
+   "Vero": 20.75
+ },
+ {
+   "Kunta": "Hausjärvi",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Heinola",
+   "Vero": 20.5
+ },
+ {
+   "Kunta": "Heinävesi",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Helsinki",
+   "Vero": 18
+ },
+ {
+   "Kunta": "Hirvensalmi",
+   "Vero": 20
+ },
+ {
+   "Kunta": "Hollola",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Huittinen",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Humppila",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Hyrynsalmi",
+   "Vero": 21.75
+ },
+ {
+   "Kunta": "Hyvinkää",
+   "Vero": 20.25
+ },
+ {
+   "Kunta": "Hämeenkyrö",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Hämeenlinna",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Ii",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Iisalmi",
+   "Vero": 20.5
+ },
+ {
+   "Kunta": "Iitti",
+   "Vero": 21.25
+ },
+ {
+   "Kunta": "Ikaalinen",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Ilmajoki",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Ilomantsi",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Imatra",
+   "Vero": 20
+ },
+ {
+   "Kunta": "Inari",
+   "Vero": 19
+ },
+ {
+   "Kunta": "Inkoo",
+   "Vero": 20.75
+ },
+ {
+   "Kunta": "Isojoki",
+   "Vero": 22.5
+ },
+ {
+   "Kunta": "Isokyrö",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Janakkala",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Joensuu",
+   "Vero": 20.5
+ },
+ {
+   "Kunta": "Jokioinen",
+   "Vero": 21.25
+ },
+ {
+   "Kunta": "Jomala",
+   "Vero": 16.5
+ },
+ {
+   "Kunta": "Joroinen",
+   "Vero": 21.25
+ },
+ {
+   "Kunta": "Joutsa",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Juuka",
+   "Vero": 20.75
+ },
+ {
+   "Kunta": "Juupajoki",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Juva",
+   "Vero": 20.75
+ },
+ {
+   "Kunta": "Jyväskylä",
+   "Vero": 20
+ },
+ {
+   "Kunta": "Jämijärvi",
+   "Vero": 22.5
+ },
+ {
+   "Kunta": "Jämsä",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Järvenpää",
+   "Vero": 20.25
+ },
+ {
+   "Kunta": "Kaarina",
+   "Vero": 20.25
+ },
+ {
+   "Kunta": "Kaavi",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Kajaani",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Kalajoki",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Kangasala",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Kangasniemi",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Kankaanpää",
+   "Vero": 21.75
+ },
+ {
+   "Kunta": "Kannonkoski",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Kannus",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Karijoki",
+   "Vero": 22.5
+ },
+ {
+   "Kunta": "Karkkila",
+   "Vero": 21.25
+ },
+ {
+   "Kunta": "Karstula",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Karvia",
+   "Vero": 20.5
+ },
+ {
+   "Kunta": "Kaskinen",
+   "Vero": 23
+ },
+ {
+   "Kunta": "Kauhajoki",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Kauhava",
+   "Vero": 21.75
+ },
+ {
+   "Kunta": "Kauniainen",
+   "Vero": 17
+ },
+ {
+   "Kunta": "Kaustinen",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Keitele",
+   "Vero": 20.5
+ },
+ {
+   "Kunta": "Kemi",
+   "Vero": 21.75
+ },
+ {
+   "Kunta": "Kemijärvi",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Keminmaa",
+   "Vero": 21.25
+ },
+ {
+   "Kunta": "Kemiönsaari",
+   "Vero": 19.75
+ },
+ {
+   "Kunta": "Kempele",
+   "Vero": 20.5
+ },
+ {
+   "Kunta": "Kerava",
+   "Vero": 19.25
+ },
+ {
+   "Kunta": "Keuruu",
+   "Vero": 21.75
+ },
+ {
+   "Kunta": "Kihniö",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Kinnula",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Kirkkonummi",
+   "Vero": 19.75
+ },
+ {
+   "Kunta": "Kitee",
+   "Vero": 20.75
+ },
+ {
+   "Kunta": "Kittilä",
+   "Vero": 20.25
+ },
+ {
+   "Kunta": "Kiuruvesi",
+   "Vero": 21.75
+ },
+ {
+   "Kunta": "Kivijärvi",
+   "Vero": 21.75
+ },
+ {
+   "Kunta": "Kokemäki",
+   "Vero": 21.75
+ },
+ {
+   "Kunta": "Kokkola",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Kolari",
+   "Vero": 20.5
+ },
+ {
+   "Kunta": "Konnevesi",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Kontiolahti",
+   "Vero": 20.5
+ },
+ {
+   "Kunta": "Korsnäs",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Koski Tl",
+   "Vero": 20
+ },
+ {
+   "Kunta": "Kotka",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Kouvola",
+   "Vero": 21.25
+ },
+ {
+   "Kunta": "Kristiinankaupunki",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Kruunupyy",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Kuhmo",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Kuhmoinen",
+   "Vero": 21.75
+ },
+ {
+   "Kunta": "Kumlinge",
+   "Vero": 18.5
+ },
+ {
+   "Kunta": "Kuopio",
+   "Vero": 20.75
+ },
+ {
+   "Kunta": "Kuortane",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Kurikka",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Kustavi",
+   "Vero": 18
+ },
+ {
+   "Kunta": "Kuusamo",
+   "Vero": 20
+ },
+ {
+   "Kunta": "Kyyjärvi",
+   "Vero": 22.5
+ },
+ {
+   "Kunta": "Kärkölä",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Kärsämäki",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Kökar",
+   "Vero": 19.75
+ },
+ {
+   "Kunta": "Lahti",
+   "Vero": 20.75
+ },
+ {
+   "Kunta": "Laihia",
+   "Vero": 21.75
+ },
+ {
+   "Kunta": "Laitila",
+   "Vero": 20.75
+ },
+ {
+   "Kunta": "Lapinjärvi",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Lapinlahti",
+   "Vero": 21.25
+ },
+ {
+   "Kunta": "Lappajärvi",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Lappeenranta",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Lapua",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Laukaa",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Lemi",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Lemland",
+   "Vero": 17.5
+ },
+ {
+   "Kunta": "Lempäälä",
+   "Vero": 20.5
+ },
+ {
+   "Kunta": "Leppävirta",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Lestijärvi",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Lieksa",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Lieto",
+   "Vero": 19.5
+ },
+ {
+   "Kunta": "Liminka",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Liperi",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Lohja",
+   "Vero": 20.5
+ },
+ {
+   "Kunta": "Loimaa",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Loppi",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Loviisa",
+   "Vero": 20.25
+ },
+ {
+   "Kunta": "Luhanka",
+   "Vero": 18.5
+ },
+ {
+   "Kunta": "Lumijoki",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Lumparland",
+   "Vero": 19.5
+ },
+ {
+   "Kunta": "Luoto",
+   "Vero": 20
+ },
+ {
+   "Kunta": "Luumäki",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Maalahti",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Maarianhamina",
+   "Vero": 17
+ },
+ {
+   "Kunta": "Marttila",
+   "Vero": 20.75
+ },
+ {
+   "Kunta": "Masku",
+   "Vero": 20.75
+ },
+ {
+   "Kunta": "Merijärvi",
+   "Vero": 22.5
+ },
+ {
+   "Kunta": "Merikarvia",
+   "Vero": 20.5
+ },
+ {
+   "Kunta": "Miehikkälä",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Mikkeli",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Muhos",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Multia",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Muonio",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Mustasaari",
+   "Vero": 20.75
+ },
+ {
+   "Kunta": "Muurame",
+   "Vero": 19.5
+ },
+ {
+   "Kunta": "Mynämäki",
+   "Vero": 21.25
+ },
+ {
+   "Kunta": "Myrskylä",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Mäntsälä",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Mänttä-Vilppula",
+   "Vero": 22.5
+ },
+ {
+   "Kunta": "Mäntyharju",
+   "Vero": 20.75
+ },
+ {
+   "Kunta": "Naantali",
+   "Vero": 19
+ },
+ {
+   "Kunta": "Nakkila",
+   "Vero": 21.75
+ },
+ {
+   "Kunta": "Nivala",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Nokia",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Nousiainen",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Nurmes",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Nurmijärvi",
+   "Vero": 19.75
+ },
+ {
+   "Kunta": "Närpiö",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Orimattila",
+   "Vero": 21.25
+ },
+ {
+   "Kunta": "Oripää",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Orivesi",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Oulainen",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Oulu",
+   "Vero": 20.5
+ },
+ {
+   "Kunta": "Outokumpu",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Padasjoki",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Paimio",
+   "Vero": 20.75
+ },
+ {
+   "Kunta": "Paltamo",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Parainen",
+   "Vero": 20.5
+ },
+ {
+   "Kunta": "Parikkala",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Parkano",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Pedersören kunta",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Pelkosenniemi",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Pello",
+   "Vero": 21.25
+ },
+ {
+   "Kunta": "Perho",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Pertunmaa",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Petäjävesi",
+   "Vero": 21.75
+ },
+ {
+   "Kunta": "Pieksämäki",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Pielavesi",
+   "Vero": 21.75
+ },
+ {
+   "Kunta": "Pietarsaari",
+   "Vero": 21.25
+ },
+ {
+   "Kunta": "Pihtipudas",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Pirkkala",
+   "Vero": 20.5
+ },
+ {
+   "Kunta": "Polvijärvi",
+   "Vero": 20.25
+ },
+ {
+   "Kunta": "Pomarkku",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Pori",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Pornainen",
+   "Vero": 20.5
+ },
+ {
+   "Kunta": "Porvoo",
+   "Vero": 19.75
+ },
+ {
+   "Kunta": "Posio",
+   "Vero": 21.75
+ },
+ {
+   "Kunta": "Pudasjärvi",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Pukkila",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Punkalaidun",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Puolanka",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Puumala",
+   "Vero": 19.5
+ },
+ {
+   "Kunta": "Pyhtää",
+   "Vero": 20.75
+ },
+ {
+   "Kunta": "Pyhäjoki",
+   "Vero": 20.75
+ },
+ {
+   "Kunta": "Pyhäjärvi",
+   "Vero": 21.75
+ },
+ {
+   "Kunta": "Pyhäntä",
+   "Vero": 19.75
+ },
+ {
+   "Kunta": "Pyhäranta",
+   "Vero": 21.75
+ },
+ {
+   "Kunta": "Pälkäne",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Pöytyä",
+   "Vero": 21.25
+ },
+ {
+   "Kunta": "Raahe",
+   "Vero": 21.25
+ },
+ {
+   "Kunta": "Raasepori",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Raisio",
+   "Vero": 20.25
+ },
+ {
+   "Kunta": "Rantasalmi",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Ranua",
+   "Vero": 19.75
+ },
+ {
+   "Kunta": "Rauma",
+   "Vero": 20.5
+ },
+ {
+   "Kunta": "Rautalampi",
+   "Vero": 22.5
+ },
+ {
+   "Kunta": "Rautavaara",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Rautjärvi",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Reisjärvi",
+   "Vero": 22.5
+ },
+ {
+   "Kunta": "Riihimäki",
+   "Vero": 20.5
+ },
+ {
+   "Kunta": "Ristijärvi",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Rovaniemi",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Ruokolahti",
+   "Vero": 20.5
+ },
+ {
+   "Kunta": "Ruovesi",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Rusko",
+   "Vero": 19.75
+ },
+ {
+   "Kunta": "Rääkkylä",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Saarijärvi",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Salla",
+   "Vero": 20.25
+ },
+ {
+   "Kunta": "Salo",
+   "Vero": 20.75
+ },
+ {
+   "Kunta": "Saltvik",
+   "Vero": 18.5
+ },
+ {
+   "Kunta": "Sastamala",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Sauvo",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Savitaipale",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Savonlinna",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Savukoski",
+   "Vero": 21.75
+ },
+ {
+   "Kunta": "Seinäjoki",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Sievi",
+   "Vero": 21.75
+ },
+ {
+   "Kunta": "Siikainen",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Siikajoki",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Siikalatva",
+   "Vero": 21.75
+ },
+ {
+   "Kunta": "Siilinjärvi",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Simo",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Sipoo",
+   "Vero": 19.25
+ },
+ {
+   "Kunta": "Siuntio",
+   "Vero": 21.25
+ },
+ {
+   "Kunta": "Sodankylä",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Soini",
+   "Vero": 21.75
+ },
+ {
+   "Kunta": "Somero",
+   "Vero": 20.5
+ },
+ {
+   "Kunta": "Sonkajärvi",
+   "Vero": 21.25
+ },
+ {
+   "Kunta": "Sotkamo",
+   "Vero": 19.75
+ },
+ {
+   "Kunta": "Sottunga",
+   "Vero": 18
+ },
+ {
+   "Kunta": "Sulkava",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Sund",
+   "Vero": 19.5
+ },
+ {
+   "Kunta": "Suomussalmi",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Suonenjoki",
+   "Vero": 21.75
+ },
+ {
+   "Kunta": "Sysmä",
+   "Vero": 19
+ },
+ {
+   "Kunta": "Säkylä",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Taipalsaari",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Taivalkoski",
+   "Vero": 20.5
+ },
+ {
+   "Kunta": "Taivassalo",
+   "Vero": 19.5
+ },
+ {
+   "Kunta": "Tammela",
+   "Vero": 21.25
+ },
+ {
+   "Kunta": "Tampere",
+   "Vero": 20.25
+ },
+ {
+   "Kunta": "Tervo",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Tervola",
+   "Vero": 20
+ },
+ {
+   "Kunta": "Teuva",
+   "Vero": 22.5
+ },
+ {
+   "Kunta": "Tohmajärvi",
+   "Vero": 21.75
+ },
+ {
+   "Kunta": "Toholampi",
+   "Vero": 21.75
+ },
+ {
+   "Kunta": "Toivakka",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Tornio",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Turku",
+   "Vero": 19.5
+ },
+ {
+   "Kunta": "Tuusniemi",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Tuusula",
+   "Vero": 19.75
+ },
+ {
+   "Kunta": "Tyrnävä",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Ulvila",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Urjala",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Utajärvi",
+   "Vero": 20.5
+ },
+ {
+   "Kunta": "Utsjoki",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Uurainen",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Uusikaarlepyy",
+   "Vero": 21.25
+ },
+ {
+   "Kunta": "Uusikaupunki",
+   "Vero": 20.75
+ },
+ {
+   "Kunta": "Vaala",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Vaasa",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Valkeakoski",
+   "Vero": 20.25
+ },
+ {
+   "Kunta": "Vantaa",
+   "Vero": 19
+ },
+ {
+   "Kunta": "Varkaus",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Vehmaa",
+   "Vero": 22.25
+ },
+ {
+   "Kunta": "Vesanto",
+   "Vero": 21.75
+ },
+ {
+   "Kunta": "Vesilahti",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Veteli",
+   "Vero": 22.5
+ },
+ {
+   "Kunta": "Vieremä",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Vihti",
+   "Vero": 20.5
+ },
+ {
+   "Kunta": "Viitasaari",
+   "Vero": 21
+ },
+ {
+   "Kunta": "Vimpeli",
+   "Vero": 22.25
+ },
+ {
+   "Kunta": "Virolahti",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Virrat",
+   "Vero": 21.25
+ },
+ {
+   "Kunta": "Vårdö",
+   "Vero": 19
+ },
+ {
+   "Kunta": "Vöyri",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "Ylitornio",
+   "Vero": 20
+ },
+ {
+   "Kunta": "Ylivieska",
+   "Vero": 23
+ },
+ {
+   "Kunta": "Ylöjärvi",
+   "Vero": 20.5
+ },
+ {
+   "Kunta": "Ypäjä",
+   "Vero": 22
+ },
+ {
+   "Kunta": "Ähtäri",
+   "Vero": 22.5
+ },
+ {
+   "Kunta": "Äänekoski",
+   "Vero": 21.5
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ },
+ {
+   "Kunta": "",
+   "Vero": null
+ }
+]
