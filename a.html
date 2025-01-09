@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>ESG Score Pie Chart</title>
+  <!-- Include Chart.js from a CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<!-- Container to hold the chart and the label in the middle -->
+<div style="position: relative; width: 200px; height: 200px; margin: 50px auto;">
+  <canvas id="esgChart"></canvas>
+  <!-- Central label showing ESG score -->
+  <div 
+    id="esgScoreLabel" 
+    style="
+      position: absolute; 
+      top: 50%; left: 50%; 
+      transform: translate(-50%, -50%); 
+      font-size: 24px; 
+      font-weight: bold;"
+  >
+  </div>
+</div>
+
+<script>
+  // Set your ESG score here:
+  const esgScore = 75;  // e.g., 75 out of 100
+
+  // Update the label text
+  document.getElementById('esgScoreLabel').textContent = esgScore;
+
+  // Calculate the "remaining" portion for the doughnut
+  const remainder = 100 - esgScore;
+
+  // Get context from canvas
+  const ctx = document.getElementById('esgChart').getContext('2d');
+
+  // Create doughnut chart
+  new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ['ESG Score', 'Remaining'],
+      datasets: [{
+        data: [esgScore, remainder],
+        backgroundColor: ['#4caf50', '#e0e0e0']
+      }]
+    },
+    options: {
+      cutout: '80%',             // Makes it look more like a ring
+      plugins: {
+        legend: { display: false },
+        tooltip: { enabled: false }
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
+
