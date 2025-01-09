@@ -9,7 +9,7 @@
 <body>
 
 <!-- Container to hold the chart and the label in the middle -->
-<div style="position: relative; width: 200px; height: 200px; margin: 50px auto;">
+<div style="position: relative; width: 100px; height: 100px; margin: 50px auto;">
   <canvas id="esgChart"></canvas>
   <!-- Central label showing ESG score -->
   <div 
@@ -26,7 +26,7 @@
 
 <script>
   // Set your ESG score here:
-  const esgScore = 75;  // e.g., 75 out of 100
+  const esgScore =  Math.floor(Math.random() * 80);  // e.g., 75 out of 100
 
   // Update the label text
   document.getElementById('esgScoreLabel').textContent = esgScore;
