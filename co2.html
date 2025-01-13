@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fff;
+        }
+
+        canvas {
+            width: 100px !important;
+            height: 100px !important;
+        }
+    </style>
+    <script>
+        // Function to extract URL parameters
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                userKey: params.get("userKey"),
+                secret: params.get("secret"),
+                query: params.get("query")
+            };
+        }
+
+        // Function to fetch data and render chart
+        async function fetchData() {
+            // Get parameters from URL
+            const { userKey, secret, query } = getQueryParams();
+
+            if (!userKey || !secret || !query) {
+                return;
+            }
+
+            // API URL
+            const apiUrl = `https://cdp.eu5-prod.gigya.com/api/businessunits/4_mxZQnFi-TWPk84k5vAKn7w/schemas/HBuQvzbYUt6LtfNMivos2A/groups/zcVZ5xi4hC0kEJk10oKaAVc4AQ0OzJsy?userKey=${encodeURIComponent(userKey)}&secret=${encodeURIComponent(secret)}`;
+
+            try {
+                // Fetch the API response
+                const response = await fetch(apiUrl, {
+                    method: "GET"
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+
+                    // Find the requested indicator in the response
+                    const indicator = findIndicator(data, query);
+
+                    if (indicator) {
+                        renderChart(indicator.name, indicator.value);
+                    }
+                }
+            } catch (error) {
+                console.error("Error:", error);
+            }
+        }
+
+        // Function to find the requested indicator in the response
+        function findIndicator(data, query) {
+            const allIndicators = [
+                ...(data.activityIndicators || []).map(indicator => ({
+                    name: indicator.name,
+                    value: indicator.sum || indicator.count
+                })),
+                ...(data.calculatedIndicators || []).map(indicator => ({
+                    name: indicator.name,
+                    value: indicator.numberValue
+                }))
+            ];
+
+            return allIndicators.find(indicator => indicator.name === query);
+        }
+
+        // Function to render the chart
+        function renderChart(name, value) {
+            const ctx = document.getElementById("chart").getContext("2d");
+            new Chart(ctx, {
+                type: "bar",
+                data: {
+                    labels: [name],
+                    datasets: [{
+                        data: [value],
+                        backgroundColor: "rgba(75, 192, 192, 0.2)",
+                        borderColor: "rgba(75, 192, 192, 1)",
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        datalabels: {
+                            display: true,
+                            color: "#000",
+                            font: {
+                                size: 10,
+                                weight: "bold"
+                            },
+                            formatter: (value) => value.toFixed(2)
+                        }
+                    },
+                    scales: {
+                        x: {
+                            display: false
+                        },
+                        y: {
+                            display: false,
+                            beginAtZero: true
+                        }
+                    }
+                },
+                plugins: [ChartDataLabels]
+            });
+        }
+
+        // Fetch data and render chart on page load
+        window.onload = fetchData;
+    </script>
+</head>
+<body>
+    <canvas id="chart"></canvas>
+</body>
+</html>
