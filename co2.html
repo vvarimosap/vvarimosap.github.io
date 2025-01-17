@@ -10,6 +10,7 @@
         body {
             margin: 0;
             padding: 0;
+            
             display: flex;
             justify-content: center;
             align-items: center;
@@ -21,6 +22,11 @@
             width: 100px !important;
             height: 100px !important;
         }
+        .large-text {
+      font-size: 40px;
+      font-weight: bold;
+      color: #000;
+    }
     </style>
     <script>
         // Function to extract URL parameters
@@ -29,108 +35,222 @@
             return {
                 userKey: params.get("userKey"),
                 secret: params.get("secret"),
-                query: params.get("query")
+                query: params.get("query"),
+                accountID: params.get("accountID")
             };
         }
+/**
+ * Fetch organizations created within the last `hours` from the CDP.
+ *
+ * @param {number} hours - How many hours back to query.
+ * @param {string} userKey - CDP user key.
+ * @param {string} secret - CDP secret.
+ * @returns {Promise<Array>} - Promise resolving to an array of {accountID, accountName}.
+ */
+ async function getOrganizationsCreatedWithin(hours, userKey, secret) {
+  // Calculate the timestamp for X hours ago
+  const twoHoursAgo = new Date(Date.now() - hours * 60 * 60 * 1000).toISOString();
 
+  console.log('Loading accounts started.')
+
+  // Build the base URL
+  const url = 'https://cdp.eu5-prod.gigya.com/api/businessunits/4_mxZQnFi-TWPk84k5vAKn7w/schemas/HBuQvzbYUt6LtfNMivos2A/groups';
+//             https://cdp.eu5-prod.gigya.com/api/businessunits/4_mxZQnFi-TWPk84k5vAKn7w/schemas/HBuQvzbYUt6LtfNMivos2A/groups/hLOUqgSnpVYmlCu6HvvFxzzpltldhhI1
+  // Prepare query parameters
+  const params = {
+    query: `select * from [Organization] where attributes.orgTechId is not null `,
+    purposeIds: 'HKqmo7glIYS6l-8B2jYMYg',
+    userKey: userKey,
+    secret: secret
+  };
+
+  // Convert our params object into a URLSearchParams string
+  const queryString = new URLSearchParams(params).toString();
+
+  // Set up the headers from the Python version; some may be optional
+  const headers = {
+    'accept': '*/*',
+    'accept-language': 'fi-FI,fi;q=0.9,en-US;q=0.8,en;q=0.7,de;q=0.6',
+    // The cookie string below is often session-specific; adapt as needed
+    'cookie': 'gmid=gmid.ver4.AtLt8erPzw.yp54eyPgCrx6...; ucid=xqFiQCt0peO3STtDaKgF8w; ...',
+    'priority': 'u=1, i',
+    'referer': 'https://agcommunity.design-time.eu10.apps.build.cloud.sap/',
+    'sec-ch-ua': '"Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"macOS"',
+    'sec-fetch-dest': 'empty',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-site': 'cross-site',
+    'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) ...',
+  };
+
+  try {
+    // Perform the GET request
+    const response = await fetch(`${url}?${queryString}`, {
+      method: 'GET',
+      headers: headers
+    });
+
+    // Check status code like in Python
+    if (!response.ok) {
+      console.error(`Failed to fetch data: ${response.status} ${response.statusText}`);
+      return null;
+    }
+
+    // Parse the JSON body
+    const data = await response.json();
+    const excludedPrefixes = ['Restaurant', 'Retaurant']; 
+    const filteredGroups = (data.groups || []).filter((org) => {
+      const accountName = org.attributes?.accountName || '';
+      return !excludedPrefixes.some(prefix => 
+        new RegExp(`^${prefix}`, 'i').test(accountName)
+      );
+    });
+    // Extract the desired attributes
+    const extractedData = filteredGroups.map((org) => {
+      const accountID = org.attributes?.accountID || '';
+      const accountName = org.attributes?.accountName || '';
+      const calculatedIndicators = org.calculatedIndicators;
+      const activityIndicators = org.activityIndicators;
+
+      return { accountID, accountName, calculatedIndicators, activityIndicators };
+    });
+
+
+    console.log('Loading accounts done.')
+    return extractedData;
+
+  } catch (error) {
+    console.error('Error while fetching organizations:', error);
+    return null;
+  }
+}
+function extractAccounts(response) {
+  // If the response is malformed or missing `groups`, return an empty array.
+  if (!response || !Array.isArray(response)) {
+    print("no response for accounts")
+    return [];
+  }
+
+  //console.log('response: '+response);
+ 
+  // Transform each `group` into the desired object structure.
+  return response.map((group) => {
+    // Extract ID and name from `attributes`.
+    const rawAccountId = group.accountID ?? '0';
+    const accountName = group.accountName ?? 'Unknown';
+ 
+    //console.log('group')
+    //console.log(group.activityIndicators)
+    // Find CO₂ value in `calculatedIndicators`, if present.
+    let co2Value = 0;
+    if (Array.isArray(group.calculatedIndicators)) {
+      const co2Indicator = group.calculatedIndicators.find(
+        (ci) => ci.name === 'CO2Emissions'
+      );
+      if (co2Indicator && typeof co2Indicator.numberValue === 'number') {
+        co2Value = co2Indicator.numberValue;
+      }
+    }
+    let revenue = 0;
+    if (Array.isArray(group.activityIndicators)) {
+      const revIndc = group.activityIndicators.find(
+        (ci) => ci.name === 'Total Order Value'
+      );
+      
+      if (revIndc && typeof revIndc.sum === 'number') {
+        revenue = revIndc.sum;
+      }
+    }
+    let volume = 0;
+    if (Array.isArray(group.activityIndicators)) {
+      const revIndc = group.activityIndicators.find(
+        (ci) => ci.name === 'Total Volume'
+      );
+      
+      if (revIndc && typeof revIndc.sum === 'number') {
+        volume = revIndc.sum;
+      }
+    }
+
+
+    //Account Classification Score
+    let acscore = 0;
+    if (Array.isArray(group.calculatedIndicators)) {
+      const revIndc = group.calculatedIndicators.find(
+        (ci) => ci.name === 'Account Classification Score'
+      );
+      
+      if (revIndc && typeof revIndc.numberValue === 'number') {
+        acscore = revIndc.numberValue;
+      }
+    }
+    console.log('Account: '+accountName);
+    console.log('acscore: '+acscore);
+    xxx = {
+      id: rawAccountId,
+      revenue: revenue,              // or pull from other indicators if available
+      co2: co2Value,
+      volume: volume,               // or pull from other indicators if available
+      segment:   acscore > 15000000 ? 'platinum' :
+      acscore > 10000000 ? 'platinum' :
+      acscore > 1000000    ? 'gold' :
+      acscore > 500000     ? 'silver' :
+                       'none',       // or compute from other data if available
+      name: accountName
+    };
+    console.log('acscore: '+xxx['segment']);
+    //console.log('co2: '+co2Value)
+    //console.log('revenue: '+revenue)
+    // Construct the account object.
+    // We set some fields (revenue, volume, segment) to defaults since they're
+    // not in the sample response. Adjust as needed for your use case.
+    return xxx;
+  });
+}
         // Function to fetch data and render chart
         async function fetchData() {
             // Get parameters from URL
-            const { userKey, secret, query } = getQueryParams();
+            const { userKey, secret, query, accountID } = getQueryParams();
 
-            if (!userKey || !secret || !query) {
-                return;
-            }
+            console.log('load: '+userKey)
+            cdp=await getOrganizationsCreatedWithin(2, userKey, secret)
+            data =  extractAccounts(cdp);
+            console.log('data: '+data);
 
-            // API URL
-            const apiUrl = `https://cdp.eu5-prod.gigya.com/api/businessunits/4_mxZQnFi-TWPk84k5vAKn7w/schemas/HBuQvzbYUt6LtfNMivos2A/groups/zcVZ5xi4hC0kEJk10oKaAVc4AQ0OzJsy?userKey=${encodeURIComponent(userKey)}&secret=${encodeURIComponent(secret)}`;
+            const org = (data || []).find((group) => {
+                return (group.id || '') === accountID;
+            });
+            console.log('org: '+org);
+            if (query=="co2"){
+                renderChart("CO2",org.co2);
+            }   
+            else if (query=="revenue"){
+                renderChart("Revenue",org.revenue);
+            }   
+            else if (query=="volume"){
+                renderChart("Volume",org.volume);
+            }   
+            else if (query=="segment"){
+                renderChart("segment",org.segment);
+            } 
 
-            try {
-                // Fetch the API response
-                const response = await fetch(apiUrl, {
-                    method: "GET"
-                });
-
-                if (response.ok) {
-                    const data = await response.json();
-
-                    // Find the requested indicator in the response
-                    const indicator = findIndicator(data, query);
-
-                    if (indicator) {
-                        renderChart(indicator.name, indicator.value);
-                    }
-                }
-            } catch (error) {
-                console.error("Error:", error);
-            }
         }
 
-        // Function to find the requested indicator in the response
-        function findIndicator(data, query) {
-            const allIndicators = [
-                ...(data.activityIndicators || []).map(indicator => ({
-                    name: indicator.name,
-                    value: indicator.sum || indicator.count
-                })),
-                ...(data.calculatedIndicators || []).map(indicator => ({
-                    name: indicator.name,
-                    value: indicator.numberValue
-                }))
-            ];
-
-            return allIndicators.find(indicator => indicator.name === query);
-        }
 
         // Function to render the chart
+       
         function renderChart(name, value) {
-            const ctx = document.getElementById("chart").getContext("2d");
-            new Chart(ctx, {
-                type: "bar",
-                data: {
-                    labels: [name],
-                    datasets: [{
-                        data: [value],
-                        backgroundColor: "rgba(75, 192, 192, 0.2)",
-                        borderColor: "rgba(75, 192, 192, 1)",
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    responsive: false,
-                    plugins: {
-                        legend: {
-                            display: false
-                        },
-                        datalabels: {
-                            display: true,
-                            color: "#000",
-                            font: {
-                                size: 10,
-                                weight: "bold"
-                            },
-                            formatter: (value) => value.toFixed(2)
-                        }
-                    },
-                    scales: {
-                        x: {
-                            display: false
-                        },
-                        y: {
-                            display: false,
-                            beginAtZero: true
-                        }
-                    }
-                },
-                plugins: [ChartDataLabels]
-            });
-        }
+        
+        const displayDiv = document.getElementById("displayValue");
+        displayDiv.textContent = value;
+}
 
         // Fetch data and render chart on page load
         window.onload = fetchData;
     </script>
 </head>
 <body>
-    <canvas id="chart"></canvas>
+    <div id="displayValue" class="large-text"></div>
 </body>
 </html>
