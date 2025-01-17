@@ -27,6 +27,18 @@
       font-weight: bold;
       color: #000;
     }
+    .reload-icon {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 24px;
+      color: #666;
+    }
+
+    .reload-icon:hover {
+      color: #000; /* hover effect */
+    }
     </style>
     <script>
         // Function to extract URL parameters
@@ -252,5 +264,10 @@ function extractAccounts(response) {
 </head>
 <body>
     <div id="displayValue" class="large-text"></div>
+      <!-- A reload icon in the corner (using a Unicode arrow) -->
+  <div class="reload-icon" onclick="window.location.reload()">
+    <b>&#x21bb;</b>  <!-- ↻ Unicode Arrow -->
+  </div>
+
 </body>
 </html>
