@@ -74,7 +74,7 @@
 //             https://cdp.eu5-prod.gigya.com/api/businessunits/4_mxZQnFi-TWPk84k5vAKn7w/schemas/HBuQvzbYUt6LtfNMivos2A/groups/hLOUqgSnpVYmlCu6HvvFxzzpltldhhI1
   // Prepare query parameters
   const params = {
-    query: `select * from [Organization] where attributes.orgTechId is not null `,
+    query: `select * from [Organization] where attributes.orgTechId is not null order by updated DESC `,
     purposeIds: 'HKqmo7glIYS6l-8B2jYMYg',
     userKey: userKey,
     secret: secret
